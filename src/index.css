@@ -1,0 +1,169 @@
+/* Reset some default styles */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 50px;
+  height: 100%;
+  font-family: "montserrat", sans-serif;
+  background-color: #fff8ea;
+
+  overflow: hidden;
+}
+
+
+svg {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 110%;
+  background-color: #fff8ea;
+}
+svg text {
+  animation: stroke 3s alternate;
+  stroke-width: 2;
+  stroke: #fff8ea;
+  font-size: 75px;
+}
+@keyframes stroke {
+  0% {
+    fill: rgba(0, 0, 0, 0);
+    stroke: rgba(0, 0, 0, 1);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(0, 0, 0, 0);
+    stroke: rgba(0, 0, 0, 1);
+  }
+  80% {
+    fill: rgba(0, 0, 0, 0);
+    stroke: rgba(0, 0, 0, 1);
+    stroke-width: 3;
+  }
+  100% {
+    fill: rgba(0, 0, 0, 1);
+    stroke: rgba(0, 0, 0, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
+
+.wrapper {
+  background-color: #fff8ea;
+}
+#select-div {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+label{
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 15px;
+  position: relative;
+  left: 10px;
+  font-size: 25px;
+
+
+}
+select {
+  position: relative;
+  z-index: 3;
+  background: transparent;
+  color: black;
+  font-size: 14px;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 22px;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+  width: 12%; 
+  a {
+      text-decoration: none;
+  }
+}
+input {
+  position: relative;
+  z-index: 3;
+  background: transparent;
+  color: black;
+  font-size: 14px;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 22px;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+  a {
+      text-decoration: none;
+  }
+}
+#convert-div{
+
+  position: relative;
+  left: 18px;
+  top: 30px;
+  display: flex;
+  flex-direction: row;
+  width: 42%;
+  justify-content: space-between;
+
+}
+#convert-div *{
+
+  position: relative;
+  left: 10px;
+
+}
+#convert-div label{
+
+  position: relative;
+  top: 5px;
+
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+    &.outline {
+        position: relative;
+        z-index: 3;
+        background: transparent;
+        color: black;
+        font-size: 14px;
+        border-color: black;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 22px;
+        padding: 10px 40px;
+        text-transform: uppercase;
+        transition: all 0.2s linear;
+        a {
+            text-decoration: none;
+        }
+    }
+    &.outline:hover {
+        color: white;
+        background: black;
+        border-color: white;
+        transition: all 0.2s linear;
+    }
+    &.outline:active {
+        border-radius: 22px;
+    }
+   
+}
+
+#converted-div{
+  position: relative;
+  left: 25px;
+  top: 50px;
+}
+
+#result{
+ font-weight: bolder;
+}
