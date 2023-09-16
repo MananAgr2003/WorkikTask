@@ -40,6 +40,5 @@ To run this Electron Forge app locally, follow these steps:
 
 Use the following command to start the Electron Forge app:
 
-```bash
-Copy code
-npm start
+   ```bash
+   npm start
